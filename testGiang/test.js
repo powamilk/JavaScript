@@ -64,9 +64,6 @@ function Update() {
         document.getElementById('hobbies-error').textContent = ""
     }
 
-
-
-
     if (!isValid) {
         return false;
     } else {
