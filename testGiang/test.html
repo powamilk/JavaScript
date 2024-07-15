@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2> User Profile </h2>
+    <div class="form-container">
+        <form id="userProfile">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username">
+            <span class="error" id="username-error"></span><br><br>
+
+            <label for="current-password">currentpassword</label>
+            <input type="password" id="currentpassword" name="currentpassword">
+            <span class="error" id="currentpassword-error"></span><br><br>
+
+            <label for="newpassword">new-password</label>
+            <input type="newpassword" name="newpassword" id="newpassword">
+            <span class="error" id="newpassword-error"></span><br><br>
+
+            <label for="confirmpassword">confirm-password</label>
+            <input type="confirmpassword" name="confirmpassword" id="confirmpassword">
+            <span class="error" id="confirmpassword-error"></span><br><br>
+            
+            <label for="nationality">nationality</label>
+            <select name="nationality" id="nationality">
+                <option value="select nationality">select nationality</option>
+                <option value="vietnam">Viet Nam</option>
+                <option value="america">America</option>
+                <option value="japan">Japan</option>
+                <option value="uk">UK</option>
+            </select>
+            <span class="error" id="nationality-error"></span><br><br>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="select gender">select gender</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <span class="error" id="gender-error"></span><br><br>
+
+            <label>Hobbies</label>
+            <div class="hobbies-container">
+                <input type="checkbox" name="hobbies" id="hobbies" value="hobbies">
+                <label for="hobbies">hobbies</label>
+                <input type="checkbox" name="reading" id="reading" value="reading">
+                <label for="reading">reading</label>
+                <input type="checkbox" name="gaming" id="gaming" value="gaming">
+                <label for="gaming">gaming</label>
+                <input type="checkbox" name="cocking" value="cocking">
+                <label for="cocking">cocking</label>
+            </div>
+            <span class="error" id="hobbies-error"></span><br><br>
+
+            <button type="button" id="myButton" onclick="Update()">Update</button>
+        </form>
+
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
