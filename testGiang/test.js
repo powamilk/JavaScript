@@ -5,7 +5,7 @@ function Update() {
     var confirmpassword = document.getElementById("confirmpassword").value;
     var nationality = document.getElementById("nationality").value;
     var gender = document.getElementById("gender").value;
-    var hobbies = document.getElementById("hobbies").value;
+    var hobbies = document.querySelectorAll("input[name='hobbies']:checked, input[name='reading']:checked, input[name='gaming']:checked, input[name='cocking']:checked");
 
     var isValid = true; 
     if(username === ""){
@@ -56,12 +56,12 @@ function Update() {
         document.getElementById('gender-error').textContent = ""
     }
 
-    if(!hobbies.checked){
-        document.getElementById('hobbies-error').textContent = "hobbies phải chọn ít nhất 1 sở thích"
-        document.getElementById("hobbies-error").style.color = "red"
+    if (hobbies.length === 0) {
+        document.getElementById('hobbies-error').textContent = "hobbies phải chọn ít nhất 1 sở thích";
+        document.getElementById("hobbies-error").style.color = "red";
         isValid = false;
     } else {
-        document.getElementById('hobbies-error').textContent = ""
+        document.getElementById('hobbies-error').textContent = "";
     }
 
     if (!isValid) {
